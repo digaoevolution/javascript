@@ -67,3 +67,20 @@ else if(idade2 < 18)
 // -------Comparação de tipo e valor --------
 //dois outros operadores de comparação existem: === e !== ;
 // a função e comparar valor e tipo de dado;
+// === -> comparação de tipo
+// ==  -> comparação de valor
+// !== -> diferente
+
+var numero = 5; // number
+
+if(numero == 5){   
+    console.log('mesmo valor com mesmo tipo.')
+}
+numero = '5'; // string
+if(numero === 5){ 
+    console.log(' mesmo valor com tipo diferente')
+}
+numero = 'cinco' // string
+if(numero !== 5){
+    console.log('nao e 5 de tipo number')
+}
