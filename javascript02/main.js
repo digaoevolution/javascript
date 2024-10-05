@@ -83,4 +83,16 @@ if(numero === 5){
 numero = 'cinco' // string
 if(numero !== 5){
     console.log('nao e 5 de tipo number')
+} 
+// ------Operadores Logicos ------------
+// operadores logicos && é conhecido tambem como AND;
+// ele vai retornar true apenas se as duas expressões retornarem true;
+// qualquer outro resultado o operador logico AND retornara false;
+var nome5 = 'pedro';
+var idade3 = 16;
+
+if(nome5 == 'pedro' && idade3 == 18){
+    console.log('idade e nome estao corretos !')
+}else{
+    console.log('nome ou idade estam errado')
 }
