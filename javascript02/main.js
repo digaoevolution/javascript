@@ -144,20 +144,20 @@ if(!(nome7 == 'rodrigo')){//operador ! inverteu o resultado
 // tendo ideia que se repita algo ate atingir tal condição;
 // WHILE = enquanto
 
-var x = 0;
+var p = 0;
 
-while(x <= 5){
-    console.log('teste de repetição' + x)
+while(p <= 5){
+    console.log('teste de repetição' + p)
     //incrementador 
-    x++;
+    p++;
 }
 
 var arr = ['a', 'b', 'c', 'd', '------'];// passando por elemantos.
-var y = 0;
+var r = 0;
 
-while(y <= 4){
-    console.log(arr[y])
-    y++;
+while(r <= 4){
+    console.log(arr[r])
+    r++;
 }
 
 var palavra = 'Rodrigo';//passando por caracteres.
@@ -167,4 +167,36 @@ while(i <= 6){
     console.log(palavra[i]);
     i+=1;//ou i++
 }
-// -----
+// -----Operadores de Atribuição ----------
+//maneiras de atribuir valor a uma variavel;
+//mais utilizadas são: +=, -=, *=, /= ;
+//É uma forma resumida da operação: x=x+y ;
+//É comum tambem utilizar operadores ++ ou -- ;
+
+var x = 1;
+var y = 2;
+//soma
+console.log(x = x + y);
+console.log(x += y);
+//subtração
+console.log(x -= y)
+//multiplicação
+console.log(x *= y)
+//divisão
+console.log(x /= y)
+// comum utilizar em loops
+console.log(x++);
+console.log(x--);
+
+while(x <= 100){
+    console.log(x);
+    x *= 2;
+}
+console.log(x)
+
+var j = 5
+
+while(x > 0){
+    console.log(x)
+    x -= j;
+}
