@@ -96,3 +96,39 @@ if(nome5 == 'pedro' && idade3 == 18){
 }else{
     console.log('nome ou idade estam errado')
 }
+// ------- Operador Logico || ( OR ) ---------
+// o operador logico || é conecido tambem como OR;
+// ele retorna true caso uma das operações retorne verdadeiro;
+// o OR retorna false apenas se as duas expressões forem falsa;
+
+var idade4 = 20;
+var nome6 = 'maria';
+
+if(nome6 == 'maria' || idade4 > 19){
+    console.log('permissão concedida')
+}else{
+    console.log('permissão negada ')
+}
+//o AND exige que todos resultados sejam true
+// o OR retorna true tendo apenas uma verdadeira
+//ex:
+if((nome6 == 'joao' || 30 > 20) && 10 == 10){
+// entre parenteses sempre serão resolvidos primeiro
+    console.log('passa')
+}else{
+    console.log('nao passa')
+}
+
+// ------Operador logico ! NOT --------
+//o operador logico ! e conhecido como NOT;
+//este operador inverte o valor em booleano que a expressão retornou;
+// se recebe true vira false e vice versa;
+
+if(!false){//sempre vai na frente da expressão.
+    console.log('virou true');
+}
+
+var nome7 = 'rodrigo';
+if(!(nome7 == 'rodrigo')){//operador ! inverteu o resultado 
+    console.log('correto')
+}
