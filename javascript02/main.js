@@ -132,3 +132,39 @@ var nome7 = 'rodrigo';
 if(!(nome7 == 'rodrigo')){//operador ! inverteu o resultado 
     console.log('correto')
 }
+
+// ----- Estruturas de Repetição ------
+//servem para repetir n vezes uma operação;
+// ex: repete uma detrminada logica em cada elemento de um array;
+// estruturas mais comuns sao: while e for;
+// ** tomar cuidado com loop infinito.**
+
+// --while--
+// A mais simples usada no javascript;
+// tendo ideia que se repita algo ate atingir tal condição;
+// WHILE = enquanto
+
+var x = 0;
+
+while(x <= 5){
+    console.log('teste de repetição' + x)
+    //incrementador 
+    x++;
+}
+
+var arr = ['a', 'b', 'c', 'd', '------'];// passando por elemantos.
+var y = 0;
+
+while(y <= 4){
+    console.log(arr[y])
+    y++;
+}
+
+var palavra = 'Rodrigo';//passando por caracteres.
+var i = 0;// começa contagem apartir do zero
+
+while(i <= 6){
+    console.log(palavra[i]);
+    i+=1;//ou i++
+}
+// -----
