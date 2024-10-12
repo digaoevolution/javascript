@@ -6,7 +6,7 @@
 var arr = [1,2,3,4,5,6];
 console.log(arr.length);
 
-//push -> adicionar elementos ao final do array, numero ou estring;
+//push -> adiciona elementos ao final do array, numero ou estring;
 arr.push(7);
 arr.push('qalquer coisa tambem');
 console.log(arr);
@@ -21,7 +21,7 @@ arr.unshift('adiciona no inicio');
 
 console.log(arr);
 
-//shift -> remover elemantos no inicio do array;
+//shift -> remove elemantos no inicio do array;
 arr.shift();
 console.log(arr);
 
@@ -33,15 +33,15 @@ console.log(Array.isArray(5));
 
 console.log(Array.isArray(arr));
 
-//splice -> extrair algo ou palavra da frase;
+//splice -> extrai/adicino algo ou palavra especifica;
 //adicionar elementos no meio de um array;
-var arr1 = [1,2,3,4,5];
-// 2 = indice ... 0 = nao apaga/adiciona..... 222=numero adicionado;
+var arr1 = [1,2,3,4,5,6,7,8,9];
+// 2 = indice/posição ... 0 = nao apaga/adiciona..... 222=numero adicionado;
 arr1.splice(2, 0, 222);
 console.log(arr1)
 //remover elemento em um array;
-//4= indice .... 1=remover 
-arr1.splice(4, 1);
+//será removido entre posição 2 a 3 ex: 1,2,x3,x4,5,6,7,8,9. pois o zero(0) sera contado na remoçao como primeiro.
+arr1.splice(2, 3);
 console.log(arr1);
 
 //join -> transformar um array em uma string;
